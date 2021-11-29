@@ -109,6 +109,15 @@ img {
   letter-spacing: 0.06em;
 }
 
+/* MEDIA QUERIES*/
+/*  Usage
+    .block {
+        @include mq(mobile) {
+            margin-bottom: 16px;
+        };
+      }
+  */
+/* FONTS STYLE */
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -903,9 +912,8 @@ img {
 
 .modal__btn:hover {
   fill: #2196f3;
-  border: 1px solid #2196f3;
-  -webkit-transition-property: border fill;
-  transition-property: border fill;
+  -webkit-transition-property: fill;
+  transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

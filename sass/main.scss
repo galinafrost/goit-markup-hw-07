@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/common";
+@import "./utils/mixins";
 
 @import "./components/header";
 @import "./components/contact";
@@ -16,4 +17,4 @@
 @import "./components/modal";
 @import "./components/modal-form";
 
-@import "./components/portfolio-page"
+@import "./components/portfolio-page";
