@@ -16,7 +16,7 @@
   </head>
   <body>
 <!-- Header -->
-   <header class="header">
+   <!-- <header class="header">
       <div class="container header__container">
            <a href="./index.html" class="header__logo"
             >Web<span class="header__logo-text">Studio</span></a>
@@ -44,15 +44,77 @@
           </li>
         </ul>
       </div>
-    </header>
+      <button class="header__button" type="button" data-mobile-menu-open>
+        <svg class="header__button-icon" width="40px" height="40px">
+          <use href="./images/icon.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+        <div class="modal-menu is-visible" data-mobile-menu>
+          <button class="modal__btn closemark-menu" data-mobile-menu-close>
+            <svg class="svgclose" width="11" height="11">
+              <use href="./images/icon.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="wrapper">
+            <ul class="modal-menu__list">
+              <li class="modal-menu__list-item">
+                <a
+                  href="index.html"
+                  class="modal-menu__link modal-menu__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="modal-menu__list-item">
+                <a href="portfolio.html" class="modal-menu__link">Портфолио</a>
+              </li>
+              <li class="modal-menu__list-item">
+                <a href="" class="modal-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <ul class="modal-menu__contact">
+              <li class="modal-menu__contact-item">
+                <a href="tel:+380961111111" class="modal-menu__contact-link accent">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="modal-menu__contact-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="modal-menu__contact-link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="modal-menu__socials">
+              <li class="modal-menu__social">
+                <a href="" class="modal-menu__social-link">Instagram </a>
+              </li>
+              <li class="modal-menu__social">
+                <a href="" class="modal-menu__social-link">Twitter</a>
+              </li>
+              <li class="modal-menu__social">
+                <a href="" class="modal-menu__social-link">Facebook</a>
+              </li>
+              <li class="modal-menu__social">
+                <a href="" class="modal-menu__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header> -->
     <main>
 <!-- Hero -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" data-modal-open class="button">Заказать услугу</button>
       </div>
-    </section>
+    </section> -->
 <!-- Skills -->
       <section class="section skills">
         <div class="container">
@@ -138,7 +200,7 @@
       </section>
 <!-- Teams -->
       <section class="section teams">
-        <div class="container teams__container">
+        <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
          <ul class="list teams__list">
@@ -297,7 +359,7 @@
         </div>
       </section>
 <!-- Clients -->
-      <section class="section client">
+<section class="section client">
         <div class="container">
         <h2 class="section-title client__title">Постоянные клиенты</h2>
         <ul class="list client__list">
@@ -333,7 +395,7 @@
       </section>
     </main>
 <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="footer__nav">
         <a href="./index.html" class="footer__logo"
@@ -379,10 +441,10 @@
         </a>
       </li>
         </ul>
-      </div>
+      </div> -->
 
 <!-- Форма для записи -->
-      <div class="letter">
+      <!-- <div class="letter">
            <p><span class="socials__text">
            ПОДПИШИТЕСЬ НА РАССЫЛКУ</span></p>
         <form>
@@ -402,9 +464,9 @@
        </form>
       </div>
     </div>
-    </footer>
+    </footer> -->
 <!-- Модальное окно -->
-
+<!-- 
     <div class="is-hidden backdrop" data-modal>
       <div class="modal">
         <button 
@@ -415,9 +477,9 @@
            <svg width="11" height="11">
              <use href="./images/icon.svg#icon-btn-close"></use>
             </svg>
-         </button>
+         </button> -->
 <!-- Form -->
-          <form class="form modal__form">
+          <!-- <form class="form modal__form">
             <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
             <label class="form__label" for="name">
               Имя
@@ -468,7 +530,8 @@
             <button class="form__btn" type="submit">Отправить</button>
           </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

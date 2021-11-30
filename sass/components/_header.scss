@@ -1,5 +1,11 @@
 .header {
+
     border-bottom: 1px solid #ECECEC;
+
+    @include mq(mobile-only) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     &__container {
         display: flex;
@@ -22,8 +28,20 @@
         font-family: Raleway;
       
         font-weight: bold;
+        letter-spacing: 0.03em;
+        font-size: 24px;
+       
+        @include mq(desktop) {
         font-size: 26px;
         line-height: 1.19;
-        letter-spacing: 0.03em;
+     }
     } 
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        @include mq(tablet) {
+          display: none;
+        }
+      }
   }

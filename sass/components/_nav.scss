@@ -1,6 +1,10 @@
 .nav {
-    margin-left: 93px;
+  display: none;
+
+  @include mq(tablet) {
     display: flex;
+  }
+    margin-left: 93px;
 
     &__list {
         display: flex;
