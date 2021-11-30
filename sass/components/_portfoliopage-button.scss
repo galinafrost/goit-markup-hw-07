@@ -1,0 +1,20 @@
+.portfolio-page {
+    &__btns {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      @include mq(desktop) {
+        justify-content: center;
+      }
+    }
+
+    &__btns-item {
+      margin-right: 8px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+}

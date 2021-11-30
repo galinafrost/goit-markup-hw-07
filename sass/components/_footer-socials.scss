@@ -1,9 +1,18 @@
 .socials {
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(desktop) {
+      margin-left: 70px;
+      margin-right: 93px;
+    }
 
     &__list {
         display: flex;
         margin-top: 20px;
+        justify-content: center;
+
       }
 
     &__text {

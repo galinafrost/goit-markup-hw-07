@@ -1,47 +1,71 @@
 .header {
+  border-bottom: 1px solid #ececec;
 
-    border-bottom: 1px solid #ECECEC;
-
-    @include mq(mobile-only) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    &__container {
-        display: flex;
-        align-items: center;
-        
-    }
-
-    &__logo {
-        color: var(--accent-color);
-        font-family: Raleway;
-      
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-    }
-       
-    &__logo-text {
-        color: var(--title-text-color);
-        font-family: Raleway;
-      
-        font-weight: bold;
-        letter-spacing: 0.03em;
-        font-size: 24px;
-       
-        @include mq(desktop) {
-        font-size: 26px;
-        line-height: 1.19;
-     }
-    } 
-
-    &__button {
-        background-color: transparent;
-        border: none;
-        @include mq(tablet) {
-          display: none;
-        }
-      }
+  @include mq(mobile-only) {
+    padding: 10px 0;
   }
+
+  &__button {
+    @include mq(mobile-only) {
+      padding: 0;
+      width: 44px;
+      height: 44px;
+
+      z-index: 101;
+
+      &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+      }
+
+      .header__close-menu {
+        display: none;
+      }
+      &.is-open .header__close-menu {
+        display: block;
+      }
+      &.is-open .header__open-menu {
+        display: none;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    color: var(--accent-color);
+    font-family: Raleway;
+
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 276px;
+  }
+
+  &__logo-text {
+    color: var(--title-text-color);
+    font-family: Raleway;
+
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    font-size: 24px;
+
+    @include mq(desktop) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    @include mq(tablet) {
+      display: none;
+    }
+  }
+}
