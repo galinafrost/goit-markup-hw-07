@@ -5,31 +5,29 @@
 
   background-color: #2f303a;
 
-  @include mq (desktop) {
+  @include mq(desktop) {
     text-align: left;
-
   }
 
   &__container {
-
     @include mq(desktop) {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-
     }
   }
 
   &__tablet {
+    @include mq(notDesktop) {
+      margin-bottom: 60px;
+    }
 
     @include mq(tablet-only) {
       display: flex;
       justify-content: center;
-      margin-bottom: 60px;
-
     }
 
-    @include mq (desktop) {
+    @include mq(desktop) {
       display: flex;
     }
   }
@@ -45,7 +43,9 @@
   }
 
   &__nav {
-    // margin-bottom: 60px;
+    @include mq(mobile-only) {
+      margin-bottom: 60px;
+    }
 
     @include mq(tablet-only) {
       margin-right: 165px;

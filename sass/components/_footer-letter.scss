@@ -4,6 +4,10 @@
     display: inline-block;
   }
 
+  @include mq (desktop) {
+    margin-left: auto;
+  }
+
   &__form {
     margin-top: 20px;
 
