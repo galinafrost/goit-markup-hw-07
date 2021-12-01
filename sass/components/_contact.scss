@@ -4,10 +4,28 @@
 
     @include mq(tablet) {
       display: flex;
+      flex-direction: column;
+      margin-left: 0;
+    }
+    @include mq (desktop) {
+      flex-direction: row;
     }
 
     &__item {
-        margin-right: 50px;
+        
+        @include mq (tablet-only) {
+          margin-right: 0;
+
+          &:first-child {
+            margin-bottom: 10px;
+          }
+        }
+
+        @include mq (desktop) {
+          &:first-child {
+           margin-right: 10px;
+          }
+        }
       }
 
     &__icons {

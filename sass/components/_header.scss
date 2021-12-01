@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
+  padding: 26px 15px;
 
   @include mq(mobile-only) {
     padding: 10px 0;
@@ -34,6 +35,14 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @include mq (mobile-only) {
+      justify-content: space-between;
+    }
+
+    @include mq (tablet) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -44,7 +53,15 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    @include mq (desktop){
     margin-right: 276px;
+  }
+  
+  @include mq (desktop){
+    margin-right: 0;
+  }
+
   }
 
   &__logo-text {
@@ -64,6 +81,8 @@
   &__button {
     background-color: transparent;
     border: none;
+    margin: 0;
+
     @include mq(tablet) {
       display: none;
     }

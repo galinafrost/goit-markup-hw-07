@@ -13,7 +13,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   padding: 48px 40px;
 
   visibility: visible;
@@ -41,6 +41,7 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    color: var(--title-text-color);
 
     &--current {
       color: var(--accent-color);

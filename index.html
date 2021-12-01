@@ -103,7 +103,6 @@
             </ul>
           </div>
         </div>
-      </div>
     </header>
     <main>
       <!-- Hero -->
@@ -208,11 +207,25 @@
 
           <ul class="list teams__list">
             <li class="teams__item">
-              <img
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="./images/team/img_lg.jpg 1x, ./images/team/img@2x_lg.jpg 2x">
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/img_md.jpg 1x, ./images/team/img@2x_md.jpg 2x">
+                <img class="image"              
+                srcset="./images/team/img_sm.jpg 1x, ./images/team/img@2x_sm.jpg 2x"
+                src="./images/team/img_sm.jpg"
+                alt="Product Designer"
+                width="270"
+                loading="lazy">
+              </picture>
+              <!-- <img
                 src="./images/team-1.jpg"
                 alt="Product Designer"
                 width="270"
-              />
+              /> -->
               <div class="teams__team-name">
                 <h3 class="teams__title">Игорь Демьяненко</h3>
                 <p class="teams__text">Product Designer</p>
@@ -249,11 +262,20 @@
               </div>
             </li>
             <li class="teams__item">
-              <img
-                src="./images/team-2.jpg"
-                alt="Frontend Developer"
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="./images/team/img-1_lg.jpg 1x, ./images/team/img@2x-1_lg.jpg 2x">
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/img-1_md.jpg 1x, ./images/team/img@2x-1_md.jpg 2x">
+                <img class="image"              
+                srcset="./images/team/img-1_sm.jpg 1x, ./images/team/img@2x-1_sm.jpg 2x"
+                src="./images/team/img-1_sm.jpg"
+                alt="Product Designer"
                 width="270"
-              />
+                loading="lazy">
+              </picture>
               <div class="teams__team-name">
                 <h3 class="teams__title">Ольга Репина</h3>
                 <p class="teams__text">Frontend Developer</p>
@@ -290,7 +312,20 @@
               </div>
             </li>
             <li class="teams__item">
-              <img src="./images/team-3.jpg" alt="Marketing" width="270" />
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="./images/team/img-2_lg.jpg 1x, ./images/team/img@2x-2_lg.jpg 2x">
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/img-2_md.jpg 1x, ./images/team/img@2x-2_md.jpg 2x">
+                <img class="image"              
+                srcset="./images/team/img-2_sm.jpg 1x, ./images/team/img@2x-2_sm.jpg 2x"
+                src="./images/team/img-2_sm.jpg"
+                alt="Product Designer"
+                width="270"
+                loading="lazy">
+              </picture>
               <div class="teams__team-name">
                 <h3 class="teams__title">Николай Тарасов</h3>
                 <p class="teams__text">Marketing</p>
@@ -327,7 +362,20 @@
               </div>
             </li>
             <li class="teams__item">
-              <img src="./images/team-4.jpg" alt="UI Designer" width="270" />
+              <picture>
+                <source
+                media="(min-width: 1280px)"
+                srcset="./images/team/img-3_lg.jpg 1x, ./images/team/img@2x-3_lg.jpg 2x">
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team/img-3_md.jpg 1x, ./images/team/img@2x-3_md.jpg 2x">
+                <img class="image"              
+                srcset="./images/team/img-3_sm.jpg 1x, ./images/team/img@2x-3_sm.jpg 2x"
+                src="./images/team/img-3_sm.jpg"
+                alt="Product Designer"
+                width="270"
+                loading="lazy">
+              </picture>
               <div class="teams__team-name">
                 <h3 class="teams__title">Михаил Ермаков</h3>
                 <p class="teams__text">UI Designer</p>
